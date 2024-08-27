@@ -1,0 +1,19 @@
+.row{
+  margin-top: 10vh;
+  gap: 50px;
+  display: flex;
+  
+}
+.col{
+  color: white;
+  font-size: 100%;
+  padding: 20px;
+  font-weight: lighter;
+  background: linear-gradient(135deg,rgba(255, 255, 255, 0.1),rgba(255, 255, 255, 0.1));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  /* border: 1px solid rgba(255, 255, 255, 0); */
+  box-shadow:0 8px 32px 0 rgba(0, 0, 0, 0.383)  ;  
+  border-radius: 10px;
+  
+}
