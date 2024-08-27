@@ -58,7 +58,7 @@ function App() {
   };
   async function getCityCoordinates() {
     const response = await fetch(
-      `http://api.openweathermap.org/geo/1.0/direct?q=${searchCity}&limit=1&appid=13e27f3a4621c395e299a38afc8175fd`
+      `https://api.openweathermap.org/geo/1.0/direct?q=${searchCity}&limit=1&appid=13e27f3a4621c395e299a38afc8175fd`
     );
     const data = await response.json();
     // console.log(data);
@@ -94,7 +94,7 @@ function App() {
   //for pollution aqi
   async function cityname(lat, lon) {
     const response = await fetch(
-      `http://api.openweathermap.org/geo/1.0/reverse?lat=${lat}&lon=${lon}&limit=1&appid=13e27f3a4621c395e299a38afc8175fd`
+      `https://api.openweathermap.org/geo/1.0/reverse?lat=${lat}&lon=${lon}&limit=1&appid=13e27f3a4621c395e299a38afc8175fd`
     );
     const data = await response.json();
     setCountry(data);
@@ -102,7 +102,7 @@ function App() {
 
   async function fetchAQI(lat, lon) {
     const response = await fetch(
-      `http://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${lon}&appid=13e27f3a4621c395e299a38afc8175fd`
+      `https://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${lon}&appid=13e27f3a4621c395e299a38afc8175fd`
     );
 
     const aqi = await response.json();
